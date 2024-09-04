@@ -1,31 +1,15 @@
+// 2.3: Write a program to input an integer from the keyboard and display on the screen “WELL DONE” that many times.
+
 #include<iostream>
 using namespace std;
-class person {
-    char name[30];
-    int age;
-
-public:
-    void getdata();
-    void display();
-};
-void person::getdata() {
-    cout<<"Name:";
-    cin>>name;
-    cout<<"Age:";
-    cin>> age;
+int main() {     
+    int n;     
+    string str="WELL DONE"; 
+     cout<<" Enter an integer value: "<<endl;  
+     cin>>n;     
+     for(int i=0;i<n;i++)     
+     {         cout<<str<<endl;    
+     }    
+     return 0;
+    
 }
-
-void person::display() {
-    cout<<"Name"<<name;
-    cout<<"Age"<<age;
-}
-
-int main(){
-    person a;
-    a.getdata();
-    a.display();
-
-    return 0;
-}
-
-
