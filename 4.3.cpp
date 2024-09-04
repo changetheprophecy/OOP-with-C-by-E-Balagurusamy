@@ -1,29 +1,17 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-
-int volume(int s);
-double volume(double r, int h);
-long volume(long l, int b, int h);
-
-int main()
+long fact(int n)
 {
-    cout << volume(10) << endl;
-    cout << volume(2.5, 8) << endl;
-    cout << volume(100L, 75, 15) << endl;
-    return 0;
+    if (n==0)
+        return 1;
+return (n * fact(n-1);
 }
+int main(
+{
+int num;
+cout<<"Enter a positive integer: ";
+cin>>num;
 
-// Function definitions
-int volume(int s) // cube
-{
-    return (s * s * s);
-}
-double volume(double r, int h) // cylinder
-{
-    return (3.14519 * r * r * h);
-}
-
-long volume(long l, int b, int h) // rectangular box
-{
-    return (l * b * h);
+cout<<"Factorial of "<<num<<"is "<<fact(num);
+return 0;
 }
